@@ -1,0 +1,11 @@
+https://github.com/nodejs/node-gyp
+
+https://github.com/thraaawn/winctl
+
+https://www.npmjs.com/package/window-size
+
+https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getclientrect
+
+https://docs.microsoft.com/en-us/previous-versions//dd162897(v=vs.85)
+
+https://www.npmjs.com/package/win32-api

@@ -1,0 +1,24 @@
+{
+  "name": "node-capture-window",
+  "version": "1.0.0",
+  "description": "Capture an image of a windows window",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahvonenj/node-capture-window.git"
+  },
+  "author": "Jonah Ahvonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahvonenj/node-capture-window/issues"
+  },
+  "homepage": "https://github.com/ahvonenj/node-capture-window#readme",
+  "type": "module",
+  "dependencies": {
+    "robotjs": "^0.6.0",
+    "win32-api": "^9.6.0"
+  }
+}
