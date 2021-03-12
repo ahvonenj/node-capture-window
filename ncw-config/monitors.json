@@ -1,0 +1,16 @@
+{
+	"monitor0":
+	{
+		"resolution": [1920, 1080]
+	},
+
+	"monitor1":
+	{
+		"resolution": [2560, 1440]
+	},
+
+	"monitor2":
+	{
+		"resolution": [1920, 1080]
+	}
+}
