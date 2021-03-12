@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ahvonenj/node-capture-window#readme",
   "type": "module",
   "dependencies": {
+    "jimp": "^0.16.1",
     "robotjs": "^0.6.0",
     "win32-api": "^9.6.0"
   }

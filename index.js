@@ -1,4 +1,5 @@
 import { K, U } from 'win32-api'
+import robot from 'robotjs'
 
 const knl32 = K.load()
 const user32 = U.load()
@@ -101,6 +102,7 @@ export function getWindowRect(windowTitle, monitors)
 	{
 		rawRect.left += xPixelCorrectionOffset;
 		rawRect.right -= xPixelCorrectionOffset;
+		rawRect.bottom -= xPixelCorrectionOffset;
 	}
 	// Window is on the right monitor
 	else
@@ -120,4 +122,18 @@ export function getWindowRect(windowTitle, monitors)
 	}
 
 	return rawRect;
+}
+
+export function grabWindowImage(windowTitle, monitors = null)
+{
+	let rect = null;
+
+	if(monitors === null)
+		rect = getRawWindowRect(windowTitle);
+	else
+		rect = getWindowRect(windowTitle, monitors);
+
+	let bitmap = robot.screen.capture(rect.left, rect.top, Math.abs(rect.right - rect.left), Math.abs(rect.bottom - rect.top));
+
+	return bitmap;
 }
